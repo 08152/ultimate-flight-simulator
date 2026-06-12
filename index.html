@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D GLB Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+        model-viewer {
+            width: 80%;
+            height: 80%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <!-- Importiert die Model-Viewer Komponente von Google -->
+    <script type="module" src="https://googleapis.com"></script>
+</head>
+<body>
+
+    <!-- Das 3D-Modell-Element -->
+    <model-viewer 
+        src="https://modelviewer.dev" 
+        ar 
+        camera-controls 
+        touch-action="pan-y" 
+        alt="Ein 3D-Modell eines Astronauten" 
+        shadow-intensity="1">
+    </model-viewer>
+
+</body>
+</html>
