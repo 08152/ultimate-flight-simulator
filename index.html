@@ -13,23 +13,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
+            /* Hintergrund der gesamten Webseite auf dunkelgrau gesetzt */
+            background-color: #1a1a1a; 
             font-family: sans-serif;
         }
         model-viewer {
-            width: 80%;
-            height: 80%;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 90%;
+            height: 90%;
+            /* Hintergrund des 3D-Bereichs ebenfalls dunkelgrau gefärbt */
+            background-color: #2a2a2a; 
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
         }
     </style>
-    <!-- KORREKTUR 1: Vollständiger Link zur Model-Viewer Bibliothek -->
-    <script type="module" src="https://googleapis.com"></script>
+    <!-- Zuverlässiges JSDelivr CDN für die Model-Viewer Bibliothek -->
+    <script type="module" src="https://jsdelivr.net"></script>
 </head>
 <body>
 
-    <!-- KORREKTUR 2: Vollständiger Pfad zur GLB-Datei -->
+    <!-- Test-Modell von der offiziellen Google-Dokumentation -->
     <model-viewer 
         src="https://modelviewer.dev" 
         ar 
